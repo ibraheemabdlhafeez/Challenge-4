@@ -21,7 +21,10 @@ body {
     border-radius: 0 7px 7px 0;
     height: 100%;
 }
-@media (max-width: 375px) {
+.box .right img:nth-child(2) {
+    display: none;
+}
+@media (max-width: 768px) {
     .box {
         display: flex;
         flex-direction: column;
@@ -33,6 +36,10 @@ body {
     .box .right img {
         width: 100%;
         border-radius: 7px 7px 0 0;
+        display: none;
+    }
+    .box .right img:nth-child(2) {
+        display: initial;
     }
 }
 .box .left {
@@ -51,7 +58,7 @@ body {
     font-size: .8rem;
     line-height: 1.4rem;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
     .box .left .text h2 {
         font-size: 1.4685rem;
         margin-bottom: 10px;
@@ -61,7 +68,7 @@ body {
         font-size: 15px;
         text-align: center;
         line-height: 1.5rem;
-        margin-top: 20px;
+        margin-top: 1px;
     }
 }
 .box .left .total {
@@ -78,7 +85,7 @@ body {
     color: hsla(0, 0%, 100%, 0.6);
     font-size: .8rem;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
     .box .left .total {
         display: flex;
         flex-direction: column;
